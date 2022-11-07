@@ -1,0 +1,56 @@
+Arguments: 
+  /home/fabricio/.nvm/versions/node/v18.12.0/bin/node /home/fabricio/.nvm/versions/node/v18.12.0/bin/yarn
+
+PATH: 
+  /home/fabricio/.nvm/versions/node/v18.12.0/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/fabricio/Android/Sdk/tools:/home/fabricio/Android/Sdk/platform-tools
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  18.12.0
+
+Platform: 
+  linux x64
+
+Trace: 
+  Error: connect EHOSTUNREACH 2606:4700::6810:1123:443
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1300:16)
+
+npm manifest: 
+  {
+    "name": "server",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+      "dev": "tsx watch src/server.ts"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "prisma": {
+      "seed": "tsx prisma/seed.ts"
+    },
+    "devDependencies": {
+      "@mermaid-js/mermaid-cli": "^9.1.7",
+      "prisma": "^4.5.0",
+      "prisma-erd-generator": "^1.2.2",
+      "tsx": "^3.11.0",
+      "typescript": "^4.8.4"
+    },
+    "dependencies": {
+      "@fastify/cors": "^8.1.1",
+      "@fastify/jwt": "^6.3.2",
+      "@prisma/client": "^4.5.0",
+      "fastify": "^4.9.2",
+      "short-unique-id": "^4.4.4",
+      "zod": "^3.19.1"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
